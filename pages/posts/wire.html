@@ -1,0 +1,55 @@
+title: Wire
+subtitle: Motion Guideline
+thumbnail: /static/images/wire-cover.jpg
+featured: /static/images/wire-cover.jpg
+tags: Image
+date: 02-12-2014
+
+role: Head of Motion Design
+year: 2014 to present
+website: wire.com
+websiteURL: http://wire.com
+
+{% extends "post.html" %}
+{% block body %}
+
+<img class="featured full-width" src="{{ featured }}"/>
+
+<div class="container">
+  <div class="row">
+    <div class="project-data col-xs-12 col-sm-4 col-sm-offset-1">
+      <h2>{{ title }}</h2>
+      <h3>{{ subtitle }}</h3>
+
+      <ul class="list-unstyled">
+        <li>
+          <span class="role"></span>
+          {{ role }}
+        </li>
+        <li>
+          <span class="year"></span>
+          {{ year }}
+        </li>
+        <li>
+          <span class="website"></span>
+          <a href="{{ websiteURL }}">{{ website }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text col-xs-12 col-sm-6">
+{% filter markdown %}
+
+Wire is a modern communications network. A startup backed by Janus Friis, co-founder of Skype.
+
+As the sole UI Motion Designer in a team of visual and interaction designers I’m responsible to lead the creation of Wire's motion guideline. A reference document that synthesises the reasoning behind the transitions and behaviour of Wire user interface and provides a consistent language for the application along different platforms and devices.
+
+The guideline contains a set of prototypes covering the most important interactions of the application. It’s conceived as a living document that will grow and update as the product continues to develop new features and explore new interactions.
+
+{% endfilter %}
+
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

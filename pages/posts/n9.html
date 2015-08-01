@@ -1,0 +1,49 @@
+title: Nokia
+subtitle: N9 Motion Guideline
+thumbnail: /static/images/n9-cover.jpg
+featured: /static/images/n9-cover.jpg
+tags: Image
+date: 02-11-2014
+
+role: UI Motion Designer & Prototyper
+year: 2011
+
+{% extends "post.html" %}
+{% block body %}
+
+<img class="featured full-width" src="{{ featured }}"/>
+
+<div class="container">
+  <div class="row">
+    <div class="project-data col-xs-12 col-sm-4 col-sm-offset-1">
+      <h2>{{ title }}</h2>
+      <h3>{{ subtitle }}</h3>
+
+      <ul class="list-unstyled">
+        <li>
+          <span class="role"></span>
+          {{ role }}
+        </li>
+        <li>
+          <span class="year"></span>
+          {{ year }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="text col-xs-12 col-sm-6">
+{% filter markdown %}
+
+Harmattan was a Meego based OS developed by Nokia. It was going to be first implemented in Nokia’s N9 device, which aimed to be the company’s entry into the competitive high-end smartphone market.
+
+I was part of a small team of interaction and visual designers. My role as a UI Motion Designer consisted of translating graphic proposals made by the visual design team into functioning prototypes to help breathe life into the interface components and improve the overall user’s experience.
+
+Our final goal was to define the motion guidelines that serve as reference when developing new components for the operating system, native and third party applications. To do this we had to assure homogeneity and coherence throughout the whole operating system.
+
+{% endfilter %}
+
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

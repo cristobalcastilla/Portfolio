@@ -1,0 +1,126 @@
+
+// fix vendor ccs
+
+
+h1 {
+  font-family: $source;
+  font-weight: normal;
+  font-size: 48px;
+}
+
+#docs {
+  opacity: .24;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.post img {
+  &.full-width {
+    max-width: 100%;
+  }
+}
+
+// header
+#header {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  border: none;
+
+  h1 {
+    font-family: $source;
+    font-size: $h1-size;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-family: $arbutus;
+    font-size: $h2-size;
+  }
+
+  .contact {
+    font-family: $source;
+    font-size: $text-size;
+    font-weight: 300;
+  }
+}
+
+// project
+.post {
+  .project-data {
+    h2 {
+      color: black;
+      font-family: $arbutus;
+      font-size: $project-h2-size;
+    }
+
+    h3 {
+      margin-bottom: 24px;
+      color: black;
+      font-family: $source;
+      font-size: $project-h3-size;
+      font-weight: 400;
+    }
+
+    ul {
+      li {
+        margin-bottom: 12px;
+        list-style: none;
+        font-family: $source;
+        font-size: $text-size;
+
+        span {
+          display: block;
+          color: gray;
+          font-family: $arbutus;
+          font-size: $project-data-size;
+          text-transform: uppercase;
+          line-height: 24px;
+
+          &.role::before { content: 'Role'; }
+          &.website::before { content: 'Website'; }
+          &.year::before { content: 'Year'; }
+        }
+      }
+    }
+  }
+
+  .text {
+    p {
+      font-family: $source;
+      font-size: $text-size;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+}
+
+// about
+#about {
+
+  .container {
+
+    .text {
+      padding: 128px 0;
+      background: rgba(0,0,0,.06);
+    }
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-family: $arbutus;
+    font-size: $h1-size;
+  }
+
+  p {
+    font-family: $source;
+    font-size: $text-size;
+    font-weight: 300;
+  }
+}
+
+// footer
+#footer {
+  padding: 32px 0 32px;
+}

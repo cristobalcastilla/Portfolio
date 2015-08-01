@@ -1,0 +1,47 @@
+title: Nokia
+subtitle: Future of Icons
+thumbnail: /static/images/future-icons-cover.jpg
+featured: /static/images/future-icons-cover.jpg
+tags: Image
+date: 02-11-2009
+
+role: Concept & Prototyper
+year: 2009
+
+{% extends "post.html" %}
+{% block body %}
+
+<img class="featured full-width" src="{{ featured }}"/>
+
+<div class="container">
+  <div class="row">
+    <div class="project-data col-xs-12 col-sm-4 col-sm-offset-1">
+      <h2>{{ title }}</h2>
+      <h3>{{ subtitle }}</h3>
+
+      <ul class="list-unstyled">
+        <li>
+          <span class="role"></span>
+          {{ role }}
+        </li>
+        <li>
+          <span class="year"></span>
+          {{ year }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="text col-xs-12 col-sm-6">
+{% filter markdown %}
+
+The objective of this project was to explore several concepts concerning the role icons would have on future devices. The context for the research and experimentation was not constrained to any type of device or technology in specific. It’s goal was to create a range of concepts that would generate new questions and inspire further investigation.
+
+The project was done by a small team of 3 visual and interaction designers including myself. I was part of the brainstorming sessions and also responsible for creating visuals and prototypes to explored our ideas.
+
+{% endfilter %}
+
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
