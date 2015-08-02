@@ -1,0 +1,64 @@
+id: evo
+title: Evo
+subtitle: Online banking
+thumbnail: /static/images/evo-cover.jpg
+featured: /static/images/evo-cover.jpg
+tags: Image
+date: 02-11-2013
+
+role: Lead Designer & Prototyper
+year: 2013
+
+{% extends "post.html" %}
+{% block body %}
+
+<img class="featured full-width" src="{{ featured }}"/>
+
+<div class="container">
+  <div class="row">
+    <div class="project-data col-xs-12 col-sm-4 col-sm-offset-1">
+      <h2>{{ title }}</h2>
+      <h3>{{ subtitle }}</h3>
+
+      <ul class="list-unstyled">
+        <li>
+          <span class="role"></span>
+          {{ role }}
+        </li>
+        <li>
+          <span class="year"></span>
+          {{ year }}
+        </li>
+        <li>
+          <span>Client</span>
+          <a href="http://www.loop-cn.com/en/" target="_blank">Loop</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="project-description col-xs-12 col-sm-6">
+{% filter markdown %}
+
+A service for the Spanish bank EVO to understand and manage your personal finances. It was done in collaboration with a team of business strategists from Loop. As the sole designer I was in charge of both the interaction and visual design.
+
+Special attention was paid to typography and visual hierarchy with the purpose of displaying complex information in a expressive and easy to understand way.
+
+The goal was to create a prototype to share the values of the service within EVO's internal departments and evaluate the experience before commiting to its development. The final deliverable was an image-linked based prototype.
+
+{% endfilter %}
+
+    </div>
+  </div>
+
+  <div class="row images">
+    <div class="col-sm-12">
+      <img src="{% static '/images/evo-1.jpg' %}" alt="">
+      <img src="{% static '/images/evo-2.jpg' %}" alt="">
+      <img src="{% static '/images/evo-3.jpg' %}" alt="">
+    </div>
+  </div>
+
+  <hr>
+</div>
+
+{% endblock body %}

@@ -11,19 +11,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* Spacing */
-.post p,.post ul {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.post p {
-  margin-bottom: 20px;
-}
-
 .post img {
-  margin: 40px auto;
   position: relative;
-  max-width: 800px;
   width: 100%;
 }
 
@@ -191,10 +180,6 @@ p.small {
   margin-bottom: 20px;
 }
 
-.post {
-  margin-bottom: 60px;
-}
-
 #post-meta {
   font-size: 13px;
   font-weight: bold;
@@ -308,5 +293,4 @@ p.small {
   a#docs { display: none; }
   #thumbnails a:first-child { margin-top: 0; }
   #header { text-align: center; margin-bottom: 0; }
-  .post { margin-bottom: 40px; }
 }

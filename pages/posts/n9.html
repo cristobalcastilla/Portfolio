@@ -1,3 +1,4 @@
+id: n9
 title: Nokia
 subtitle: N9 Motion Guideline
 thumbnail: /static/images/n9-cover.jpg
@@ -15,7 +16,7 @@ year: 2011
 
 <div class="container">
   <div class="row">
-    <div class="project-data col-xs-12 col-sm-4 col-sm-offset-1">
+    <div class="project-data col-sm-4 col-sm-offset-1">
       <h2>{{ title }}</h2>
       <h3>{{ subtitle }}</h3>
 
@@ -31,7 +32,7 @@ year: 2011
       </ul>
     </div>
 
-    <div class="text col-xs-12 col-sm-6">
+    <div class="project-description col-sm-6">
 {% filter markdown %}
 
 Harmattan was a Meego based OS developed by Nokia. It was going to be first implemented in Nokia’s N9 device, which aimed to be the company’s entry into the competitive high-end smartphone market.
@@ -44,6 +45,20 @@ Our final goal was to define the motion guidelines that serve as reference when 
 
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{% static '/images/harmattan-1.jpg' %}" alt="">
+    </div>
+    <div class="col-sm-4">
+      <img src="{% static '/images/harmattan-2.jpg' %}" alt="">
+    </div>
+    <div class="col-sm-4">
+      <img src="{% static '/images/harmattan-3.jpg' %}" alt="">
+    </div>
+  </div>
+
+  <hr>
 </div>
 
 {% endblock body %}

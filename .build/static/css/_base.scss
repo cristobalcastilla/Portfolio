@@ -1,7 +1,4 @@
 
-// fix vendor ccs
-
-
 h1 {
   font-family: $source;
   font-weight: normal;
@@ -16,10 +13,12 @@ h1 {
   }
 }
 
-.post img {
-  &.full-width {
-    max-width: 100%;
-  }
+// list of social networks and email
+.contact {
+  display: inline-block;
+  font-family: $source;
+  font-size: $text-size;
+  font-weight: 400;
 }
 
 // header
@@ -29,6 +28,7 @@ h1 {
   border: none;
 
   h1 {
+    padding-bottom: 12px;
     font-family: $source;
     font-size: $h1-size;
     font-weight: 300;
@@ -38,18 +38,54 @@ h1 {
     font-family: $arbutus;
     font-size: $h2-size;
   }
-
-  .contact {
-    font-family: $source;
-    font-size: $text-size;
-    font-weight: 300;
-  }
 }
 
 // project
+#project-future-icons {
+  .images {
+    img {
+      margin: 0;
+    }
+  }
+}
+
+#project-evo {
+  .images {
+    img {
+      border: 1px solid rgba(0, 0, 0, .24);
+    }
+  }
+}
+
 .post {
+  padding-top: 80px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 80px;
+  }
+
+  .featured {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
   .project-data {
+    margin-bottom: 60px;
+
     h2 {
+      margin-bottom: 4px;
       color: black;
       font-family: $arbutus;
       font-size: $project-h2-size;
@@ -86,7 +122,9 @@ h1 {
     }
   }
 
-  .text {
+  .project-description {
+    margin-bottom: 60px;
+
     p {
       font-family: $source;
       font-size: $text-size;
@@ -98,12 +136,15 @@ h1 {
 
 // about
 #about {
-
   .container {
-
     .text {
-      padding: 128px 0;
-      background: rgba(0,0,0,.06);
+      padding: 80px;
+      background: rgba(0,0,0,.04);
+      color: #222;
+
+      p {
+        margin-bottom: 12px
+      }
     }
   }
 
@@ -117,10 +158,19 @@ h1 {
     font-family: $source;
     font-size: $text-size;
     font-weight: 300;
+
+    strong {
+      font-weight: 700;
+    }
   }
 }
 
 // footer
 #footer {
-  padding: 32px 0 32px;
+  margin-top: 40px;
+  padding: 40px 0;
+
+  .contact {
+    margin-left: 8px;
+  }
 }

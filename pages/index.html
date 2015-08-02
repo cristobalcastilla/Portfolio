@@ -9,29 +9,18 @@
 				<div class="col-sm-5 col-sm-offset-1">
 					<header id="brand">
 						<h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
-						<h2>UX, Motion Designer & Prototyper</h2>
+						<h2>UX, UI Motion Designer &amp; Prototyper</h2>
 					</header>
 				</div>
-				<div class="col-sm-5">
-					<div id="contact">
-						<ul class="list-unstyle list-inline text-right">
-							<li>Twitter</li>
-							<li>LinkedIn</li>
-							<li>Email</li>
-						</ul>
-					</div>
+				<div class="col-sm-5 text-right">
+					{% include 'bit/contact.html' %}
 				</div>
 			</div>
 		</div>
 
 		<section id="projects" class="clearfix">
 			{% for post in posts %}
-				<div class="post">{{ post.body }}</div>
-
-				<!-- <a href='/{{ post.path }}'> -->
-					<!-- <img class="2x" width="300" height="300" src="{{ post.thumbnail }}"/> -->
-					<!-- <span>{{ post.title }}</span> -->
-				<!-- </a> -->
+				<div id="project-{{ post.id }}" class="post">{{ post.body }}</div>
 			{% endfor %}
 		</section>
 
@@ -40,9 +29,9 @@
 		</section>
 
 		{% block footer %}
-			<footer id="footer">
+
 				{% include 'bit/footer.html' %}
-			</footer>
+
 		{% endblock footer %}
 	</section>
 
