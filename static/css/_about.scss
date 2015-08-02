@@ -1,0 +1,29 @@
+#about {
+  .container {
+    .text {
+      padding: 80px;
+      background: rgba(0,0,0,.04);
+      color: #222;
+
+      p {
+        margin-bottom: 12px
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-family: $arbutus;
+    font-size: $h1-size;
+  }
+
+  p {
+    font-family: $source;
+    font-size: $text-size;
+    font-weight: 300;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}

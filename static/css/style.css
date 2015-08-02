@@ -290,20 +290,9 @@ h1 {
   font-weight: normal;
   font-size: 48px; }
 
-#docs {
-  opacity: .24; }
-  #docs:hover {
-    opacity: 1; }
-
-.contact {
-  display: inline-block;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400; }
-
 #header {
+  margin-bottom: 100px;
   padding-top: 80px;
-  padding-bottom: 40px;
   border: none; }
   #header h1 {
     padding-bottom: 12px;
@@ -314,63 +303,65 @@ h1 {
     font-family: "Arbutus Slab", Georgia, serif;
     font-size: 18px; }
 
-#project-future-icons .images img {
-  margin: 0; }
-
-#project-evo .images img {
-  border: 1px solid rgba(0, 0, 0, 0.24); }
-
-.post {
+.project {
   padding-top: 80px; }
-  .post:first-child {
+  .project:first-child {
     padding-top: 0; }
-  .post:last-child {
+  .project:last-child {
     margin-bottom: 80px; }
-  .post .featured {
-    max-width: 100%;
+  .project .featured {
+    width: 100%;
     margin-bottom: 40px; }
-  .post p {
+  .project p {
     margin-bottom: 16px; }
-  .post .header {
+  .project .header {
     margin-bottom: 40px; }
-  .post .project-data {
+  .project .project-data {
     margin-bottom: 60px; }
-    .post .project-data h2 {
+    .project .project-data h2 {
       margin-bottom: 4px;
       color: black;
       font-family: "Arbutus Slab", Georgia, serif;
       font-size: 36px; }
-    .post .project-data h3 {
+    .project .project-data h3 {
       margin-bottom: 24px;
       color: black;
       font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
       font-size: 18px;
       font-weight: 400; }
-    .post .project-data ul li {
+    .project .project-data ul li {
       margin-bottom: 12px;
       list-style: none;
       font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
       font-size: 18px; }
-      .post .project-data ul li span {
+      .project .project-data ul li span {
         display: block;
         color: gray;
         font-family: "Arbutus Slab", Georgia, serif;
         font-size: 12px;
         text-transform: uppercase;
         line-height: 24px; }
-        .post .project-data ul li span.role::before {
+        .project .project-data ul li span.role::before {
           content: 'Role'; }
-        .post .project-data ul li span.website::before {
+        .project .project-data ul li span.website::before {
           content: 'Website'; }
-        .post .project-data ul li span.year::before {
+        .project .project-data ul li span.year::before {
           content: 'Year'; }
-  .post .project-description {
+  .project .project-description {
     margin-bottom: 60px; }
-    .post .project-description p {
+    .project .project-description p {
       font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
       font-size: 18px;
       font-weight: 300;
       line-height: 24px; }
+  .project .images img {
+    width: 100%; }
+
+#project-future-icons .images img {
+  margin: 0; }
+
+#project-evo .images img {
+  border: 1px solid rgba(0, 0, 0, 0.24); }
 
 #about .container .text {
   padding: 80px;
@@ -388,6 +379,12 @@ h1 {
   font-weight: 300; }
   #about p strong {
     font-weight: 700; }
+
+.contact {
+  display: inline-block;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400; }
 
 #footer {
   margin-top: 40px;

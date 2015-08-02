@@ -1,63 +1,4 @@
-
-h1 {
-  font-family: $source;
-  font-weight: normal;
-  font-size: 48px;
-}
-
-#docs {
-  opacity: .24;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-// list of social networks and email
-.contact {
-  display: inline-block;
-  font-family: $source;
-  font-size: $text-size;
-  font-weight: 400;
-}
-
-// header
-#header {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  border: none;
-
-  h1 {
-    padding-bottom: 12px;
-    font-family: $source;
-    font-size: $h1-size;
-    font-weight: 300;
-  }
-
-  h2 {
-    font-family: $arbutus;
-    font-size: $h2-size;
-  }
-}
-
-// project
-#project-future-icons {
-  .images {
-    img {
-      margin: 0;
-    }
-  }
-}
-
-#project-evo {
-  .images {
-    img {
-      border: 1px solid rgba(0, 0, 0, .24);
-    }
-  }
-}
-
-.post {
+.project {
   padding-top: 80px;
 
   &:first-child {
@@ -69,7 +10,7 @@ h1 {
   }
 
   .featured {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 40px;
   }
 
@@ -132,45 +73,27 @@ h1 {
       line-height: 24px;
     }
   }
-}
 
-// about
-#about {
-  .container {
-    .text {
-      padding: 80px;
-      background: rgba(0,0,0,.04);
-      color: #222;
-
-      p {
-        margin-bottom: 12px
-      }
-    }
-  }
-
-  h2 {
-    margin-bottom: 12px;
-    font-family: $arbutus;
-    font-size: $h1-size;
-  }
-
-  p {
-    font-family: $source;
-    font-size: $text-size;
-    font-weight: 300;
-
-    strong {
-      font-weight: 700;
+  .images {
+    img {
+      width: 100%;
     }
   }
 }
 
-// footer
-#footer {
-  margin-top: 40px;
-  padding: 40px 0;
+// exception for individual projects
+#project-future-icons {
+  .images {
+    img {
+      margin: 0;
+    }
+  }
+}
 
-  .contact {
-    margin-left: 8px;
+#project-evo {
+  .images {
+    img {
+      border: 1px solid rgba(0, 0, 0, .24);
+    }
   }
 }
