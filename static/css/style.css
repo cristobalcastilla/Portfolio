@@ -290,6 +290,9 @@ h1 {
   font-weight: normal;
   font-size: 48px; }
 
+a, a:hover {
+  text-decoration: none; }
+
 #header {
   margin-bottom: 100px;
   padding-top: 80px;
@@ -356,6 +359,8 @@ h1 {
       line-height: 24px; }
   .project .images img {
     width: 100%; }
+  .project .container .row.last {
+    margin-bottom: 80px; }
 
 #project-future-icons .images img {
   margin: 0; }
@@ -388,8 +393,12 @@ h1 {
 
 #footer {
   margin-top: 40px;
-  padding: 40px 0; }
+  padding: 40px 0;
+  font-size: 14px; }
   #footer .contact {
-    margin-left: 8px; }
+    margin-left: 8px;
+    font-size: 14px; }
+  #footer .copyright {
+    color: #bbb; }
 
 /*# sourceMappingURL=style.css.map */

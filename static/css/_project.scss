@@ -79,6 +79,12 @@
       width: 100%;
     }
   }
+
+  .container {
+    .row.last {
+      margin-bottom: 80px;
+    }
+  }
 }
 
 // exception for individual projects
