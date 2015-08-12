@@ -6,6 +6,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/posts/evo.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/posts/future-icons.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
