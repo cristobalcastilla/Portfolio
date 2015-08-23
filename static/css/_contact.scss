@@ -4,4 +4,12 @@
   font-family: $source;
   font-size: $text-size;
   font-weight: 400;
+
+  li {
+    margin-left: 8px;
+
+    a {
+      color: $color-accent;
+    }
+  }
 }

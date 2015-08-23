@@ -75,7 +75,15 @@
   }
 
   .images {
+    &:not(.last) {
+      margin-bottom: 24px;
+    }
+
     img {
+      width: 100%;
+    }
+
+    video {
       width: 100%;
     }
   }
@@ -87,7 +95,14 @@
   }
 }
 
-// exception for individual projects
+// exceptions for individual projects
+#project-n9 {
+  video {
+    padding: 10px;
+    background: black;
+  }
+}
+
 #project-future-icons {
   .images {
     img {

@@ -1,12 +1,15 @@
 
 h1 {
-  font-family: $source;
-  font-weight: normal;
   font-size: 48px;
 }
 
 a, a:hover {
+  color: $color-accent;
   text-decoration: none;
+
+  &:hover {
+    color: $color-dark;
+  }
 }
 
 // header
@@ -17,12 +20,14 @@ a, a:hover {
 
   h1 {
     padding-bottom: 12px;
-    font-family: $source;
+    color: $color-dark;
+    font-family: $roboto;
     font-size: $h1-size;
     font-weight: 300;
   }
 
   h2 {
+    color: $color-light;
     font-family: $arbutus;
     font-size: $h2-size;
   }
