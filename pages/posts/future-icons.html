@@ -44,12 +44,33 @@ The project was done by a small team of 3 visual and interaction designers inclu
     </div>
   </div>
 
+  <div class="row images">
+    <div class="col-sm-4">
+      <video controls loop>
+        <source src="{% static '/videos/future-popups-1.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="col-sm-4">
+      <video controls loop>
+        <source src="{% static '/videos/future-popups-2.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="col-sm-4">
+      <video controls loop>
+        <source src="{% static '/videos/future-popups-email.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
   <div class="row images last">
     <div class="col-sm-12">
-      <img src="{% static '/images/future-icons-incoming.jpg' %}" alt="">
       <img src="{% static '/images/future-icons-granularity.jpg' %}" alt="">
     </div>
   </div>
+
 </div>
 
 {% endblock body %}

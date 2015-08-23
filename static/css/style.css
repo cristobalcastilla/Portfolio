@@ -309,6 +309,9 @@ a, a:hover {
     font-family: "Arbutus Slab", Georgia, serif;
     font-size: 18px; }
 
+p {
+  color: #4A4A4A; }
+
 .project {
   padding-top: 80px; }
   .project:first-child {
@@ -373,8 +376,12 @@ a, a:hover {
   padding: 10px;
   background: black; }
 
-#project-future-icons .images img {
-  margin: 0; }
+#project-future-icons .images {
+  margin-bottom: 4px;
+  padding: 20px 8px;
+  background: #2b2b2b; }
+  #project-future-icons .images img {
+    margin: 0; }
 
 #project-evo .images img {
   margin-bottom: 24px;
@@ -395,6 +402,7 @@ a, a:hover {
   font-size: 18px;
   font-weight: 300; }
   #about p strong {
+    color: #4A4A4A;
     font-weight: 700; }
 
 .contact {
@@ -406,6 +414,9 @@ a, a:hover {
     margin-left: 8px; }
     .contact li a {
       color: #3BAEDA; }
+
+#header .contact {
+  padding-top: 15px; }
 
 #footer {
   margin-top: 40px;
