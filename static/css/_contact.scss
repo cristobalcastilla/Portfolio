@@ -1,21 +1,31 @@
 // list of social networks and email
 .contact {
   display: inline-block;
+  width: 100%;
   font-family: $source;
   font-size: $text-size;
   font-weight: 400;
+  text-align: center;
 
   li {
     margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     a {
       color: $color-accent;
     }
   }
+
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
 }
 
 #header {
   .contact {
-    padding-top: 15px;
+    padding-top: 16px;
   }
 }

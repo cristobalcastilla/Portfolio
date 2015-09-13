@@ -4,8 +4,8 @@
 	<section id="wrapper">
 		<div class="container">
 			<div id="header" class="row">
-				<div class="col-sm-1 col-sm-offset-1">
-					<img src="{% static '/images/logo.png' %}" alt="">
+				<div class="col-xs-4 col-xs-offset-4 col-sm-1 col-sm-offset-1">
+					<img class="logo" src="{% static '/images/logo.png' %}" alt="logo">
 				</div>
 				<div class="col-sm-5">
 					<header id="brand">
@@ -13,7 +13,7 @@
 						<h2>UX, UI Motion Designer &amp; Prototyper</h2>
 					</header>
 				</div>
-				<div class="col-sm-4 text-right">
+				<div class="col-sm-4">
 					{% include 'bit/contact.html' %}
 				</div>
 			</div>
@@ -30,9 +30,7 @@
 		</section>
 
 		{% block footer %}
-
 				{% include 'bit/footer.html' %}
-
 		{% endblock footer %}
 	</section>
 

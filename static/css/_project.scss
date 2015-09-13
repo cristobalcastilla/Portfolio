@@ -23,7 +23,7 @@
   }
 
   .project-data {
-    margin-bottom: 60px;
+    margin-bottom: 24px;
 
     h2 {
       margin-bottom: 4px;
@@ -59,25 +59,39 @@
           &.website::before { content: 'Website'; }
           &.year::before { content: 'Year'; }
         }
+
+        @media (min-width: $screen-sm-min) {
+          font-size: $text-size-sm;
+        }
       }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 60px;
     }
   }
 
   .project-description {
-    margin-bottom: 60px;
+    margin-bottom: 0;
 
     p {
       font-family: $source;
       font-size: $text-size;
       font-weight: 300;
       line-height: 24px;
+
+      @media(min-width: $screen-sm-min) {
+        font-size: $text-size-sm;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 60px;
     }
   }
 
   .images {
-    &:not(.last) {
-      margin-bottom: 24px;
-    }
+    margin-bottom: 0;
 
     img {
       width: 100%;
@@ -85,6 +99,12 @@
 
     video {
       width: 100%;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      &:not(.last) {
+        margin-bottom: 24px;
+      }
     }
   }
 

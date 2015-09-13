@@ -14,21 +14,44 @@ a, a:hover {
 
 #header {
   margin-bottom: 100px;
-  padding-top: 80px;
+  padding-top: 40px;
   border: none;
+
+  .logo {
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 0;
+    }
+  }
 
   h1 {
     padding-bottom: 12px;
+
     color: $color-dark;
     font-family: $roboto;
     font-size: $h1-size;
     font-weight: 300;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: $h1-size-sm;
+    }
   }
 
   h2 {
+    margin-bottom: 12px;
     color: $color-light;
     font-family: $arbutus;
     font-size: $h2-size;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 0;
+      font-size: $h2-size-sm;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding-top: 80px;
   }
 }
 

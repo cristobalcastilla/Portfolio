@@ -3,16 +3,23 @@ $arbutus: 'Arbutus Slab', Georgia, serif;
 $roboto: 'Roboto Slab', Georgia, serif;
 $source: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
+$screen-xs-max: 480px;
+$screen-sm-min: $screen-xs-max + 1;
+$screen-sm-max: 768px;
+
 $color-blue: #3BAEDA;
 $color-dark: #4A4A4A;
 $color-light: #9B9B9B;
 $color-accent: $color-blue;
 
-$h1-size: 36px;
-$h2-size: 18px;
+$h1-size: 28px;
+$h1-size-sm: 36px;
+$h2-size: 14px;
+$h2-size-sm: 18px;
 $h3-size: 18px;
 
-$text-size: 18px;
+$text-size: 14px;
+$text-size-sm: 18px;
 $text-size-footer: 14px;
 
 $project-h2-size: $h1-size;
