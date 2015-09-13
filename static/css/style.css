@@ -418,12 +418,16 @@ p {
   margin-bottom: 24px;
   border: 1px solid rgba(0, 0, 0, 0.24); }
 
-#about .container .text {
-  padding: 80px;
-  background: rgba(0, 0, 0, 0.04);
-  color: #222; }
-  #about .container .text p {
-    margin-bottom: 12px; }
+#about .container {
+  background: rgba(0, 0, 0, 0.04); }
+  #about .container .text {
+    padding: 48px 15px 24px;
+    color: #222; }
+    #about .container .text p {
+      margin-bottom: 12px; }
+    @media (min-width: 481px) {
+      #about .container .text {
+        padding: 120px 80px; } }
 #about h2 {
   margin-bottom: 12px;
   font-family: "Arbutus Slab", Georgia, serif;
@@ -461,8 +465,10 @@ p {
   padding: 40px 0;
   font-size: 14px; }
   #footer .contact {
+    position: relative;
+    top: -1px;
     margin-left: 8px;
-    font-size: 14px; }
+    text-align: left; }
   #footer .copyright {
     color: #bbb; }
 

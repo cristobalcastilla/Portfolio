@@ -1,12 +1,17 @@
 #about {
   .container {
+    background: rgba(0,0,0,.04);
+
     .text {
-      padding: 80px;
-      background: rgba(0,0,0,.04);
+      padding: 48px 15px 24px;
       color: #222;
 
       p {
         margin-bottom: 12px
+      }
+
+      @media (min-width: $screen-sm-min) {
+        padding: 120px 80px;
       }
     }
   }
