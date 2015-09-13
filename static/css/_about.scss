@@ -1,9 +1,10 @@
 #about {
-  .container {
-    background: rgba(0,0,0,.04);
+  background: rgba(0,0,0,.04);
 
+  .container {
     .text {
-      padding: 48px 15px 24px;
+      padding-top: 48px;
+      padding-bottom: 24px;
       color: #222;
 
       p {
@@ -11,15 +12,24 @@
       }
 
       @media (min-width: $screen-sm-min) {
-        padding: 120px 80px;
+        padding-top: 128px;
+        padding-bottom: 80px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        padding-bottom: 128px;
       }
     }
   }
 
   h2 {
     margin-bottom: 12px;
-    font-family: $arbutus;
+    font-family: $roboto;
     font-size: $h1-size;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 32px;
+    }
   }
 
   p {
@@ -31,5 +41,11 @@
       color: $color-dark;
       font-weight: 700;
     }
+
+    @media (min-width: $screen-sm-min) {
+      font-size: $text-size-sm;
+    }
   }
+
+
 }

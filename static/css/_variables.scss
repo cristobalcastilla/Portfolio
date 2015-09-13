@@ -3,27 +3,37 @@ $arbutus: 'Arbutus Slab', Georgia, serif;
 $roboto: 'Roboto Slab', Georgia, serif;
 $source: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
-$screen-xs-max: 480px;
-$screen-sm-min: $screen-xs-max + 1;
-$screen-sm-max: 768px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-sm-max: $screen-md-min - 1;
+$screen-md-max: $screen-lg-min - 1;
 
 $color-blue: #3BAEDA;
 $color-dark: #4A4A4A;
 $color-light: #9B9B9B;
 $color-accent: $color-blue;
+$color-mute: #BBB;
 
 $h1-size: 28px;
 $h1-size-sm: 36px;
+$h1-size-md: 28px;
+$h1-size-lg: 36px;
 $h2-size: 14px;
 $h2-size-sm: 18px;
+$h2-size-md: 14px;
+$h2-size-lg: 14px;
 $h3-size: 18px;
 
 $text-size: 14px;
 $text-size-sm: 18px;
-$text-size-footer: 14px;
-$text-size-footer-sm: 14px;
+$text-size-footer: 12px;
+$text-size-footer-sm: 16px;
 
 $project-h2-size: $h1-size;
 $project-h3-size: $h2-size;
 
 $project-data-size: 12px;
+
+$icon-size: 16px;
+$icon-size-sm: 20px;

@@ -3,12 +3,12 @@
   display: inline-block;
   width: 100%;
   font-family: $source;
-  font-size: $text-size;
+  font-size: $icon-size;
   font-weight: 400;
   text-align: center;
 
   li {
-    margin-left: 8px;
+    margin-left: 24px;
 
     &:first-child {
       margin-left: 0;
@@ -17,9 +17,18 @@
     a {
       color: $color-accent;
     }
+
+    @media (min-width: $screen-sm-min) {
+      margin-left: 12px;
+    }
   }
 
   @media (min-width: $screen-sm-min) {
+    font-size: $icon-size-sm;
+  }
+
+
+  @media (min-width: $screen-md-min) {
     text-align: right;
   }
 }

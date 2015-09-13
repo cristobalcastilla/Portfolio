@@ -13,45 +13,90 @@ a, a:hover {
 }
 
 #header {
-  margin-bottom: 100px;
   padding-top: 40px;
+  margin-bottom: 96px;
   border: none;
 
   .logo {
     margin-bottom: 24px;
+    text-align: center;
 
-    @media (min-width: $screen-sm-min) {
-      margin-bottom: 0;
+    img {
+      width: 64px;
+
+      @media (min-width: $screen-sm-min) {
+        width: 80px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        width: 64px;
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+      display: inline-block;
+      margin-right: 12px;
     }
   }
 
-  h1 {
-    padding-bottom: 12px;
+  .brand {
+    margin-bottom: 24px;
+    text-align: center;
 
-    color: $color-dark;
-    font-family: $roboto;
-    font-size: $h1-size;
-    font-weight: 300;
+    h1 {
+      padding-bottom: 12px;
+      color: $color-dark;
+      font-family: $roboto;
+      font-size: $h1-size;
+      font-weight: 300;
 
-    @media (min-width: $screen-sm-min) {
-      font-size: $h1-size-sm;
+      @media (min-width: $screen-sm-min) {
+        padding-bottom: 14px;
+        font-size: $h1-size-sm;
+      }
+
+      @media (min-width: $screen-md-min) {
+        font-size: $h1-size-md;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        padding-bottom: 10px;
+        font-size: $h1-size-lg;
+      }
     }
-  }
 
-  h2 {
-    margin-bottom: 12px;
-    color: $color-light;
-    font-family: $arbutus;
-    font-size: $h2-size;
+    h2 {
+      margin-bottom: 12px;
+      color: $color-light;
+      font-family: $arbutus;
+      font-size: $h2-size;
 
-    @media (min-width: $screen-sm-min) {
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+        font-size: $h2-size-sm;
+      }
+
+      @media (min-width: $screen-md-min) {
+        font-size: $h2-size-md;
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+      position: relative;
+      top: -8px;
+      display: inline-block;
       margin-bottom: 0;
-      font-size: $h2-size-sm;
+      text-align: left;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      top: -4px;
     }
   }
 
   @media (min-width: $screen-sm-min) {
     padding-top: 80px;
+    margin-bottom: 160px;
   }
 }
 

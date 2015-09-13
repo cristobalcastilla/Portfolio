@@ -295,35 +295,70 @@ a, a:hover {
     color: #4A4A4A; }
 
 #header {
-  margin-bottom: 100px;
   padding-top: 40px;
+  margin-bottom: 96px;
   border: none; }
   #header .logo {
-    margin-bottom: 24px; }
-    @media (min-width: 481px) {
+    margin-bottom: 24px;
+    text-align: center; }
+    #header .logo img {
+      width: 64px; }
+      @media (min-width: 768px) {
+        #header .logo img {
+          width: 80px; } }
+      @media (min-width: 992px) {
+        #header .logo img {
+          width: 64px; } }
+    @media (min-width: 992px) {
       #header .logo {
-        margin-bottom: 0; } }
-  #header h1 {
-    padding-bottom: 12px;
-    color: #4A4A4A;
-    font-family: "Roboto Slab", Georgia, serif;
-    font-size: 28px;
-    font-weight: 300; }
-    @media (min-width: 481px) {
-      #header h1 {
-        font-size: 36px; } }
-  #header h2 {
-    margin-bottom: 12px;
-    color: #9B9B9B;
-    font-family: "Arbutus Slab", Georgia, serif;
-    font-size: 14px; }
-    @media (min-width: 481px) {
-      #header h2 {
+        display: inline-block;
+        margin-right: 12px; } }
+  #header .brand {
+    margin-bottom: 24px;
+    text-align: center; }
+    #header .brand h1 {
+      padding-bottom: 12px;
+      color: #4A4A4A;
+      font-family: "Roboto Slab", Georgia, serif;
+      font-size: 28px;
+      font-weight: 300; }
+      @media (min-width: 768px) {
+        #header .brand h1 {
+          padding-bottom: 14px;
+          font-size: 36px; } }
+      @media (min-width: 992px) {
+        #header .brand h1 {
+          font-size: 28px; } }
+      @media (min-width: 1200px) {
+        #header .brand h1 {
+          padding-bottom: 10px;
+          font-size: 36px; } }
+    #header .brand h2 {
+      margin-bottom: 12px;
+      color: #9B9B9B;
+      font-family: "Arbutus Slab", Georgia, serif;
+      font-size: 14px; }
+      @media (min-width: 768px) {
+        #header .brand h2 {
+          margin-bottom: 0;
+          font-size: 18px; } }
+      @media (min-width: 992px) {
+        #header .brand h2 {
+          font-size: 14px; } }
+    @media (min-width: 992px) {
+      #header .brand {
+        position: relative;
+        top: -8px;
+        display: inline-block;
         margin-bottom: 0;
-        font-size: 18px; } }
-  @media (min-width: 481px) {
+        text-align: left; } }
+    @media (min-width: 1200px) {
+      #header .brand {
+        top: -4px; } }
+  @media (min-width: 768px) {
     #header {
-      padding-top: 80px; } }
+      padding-top: 80px;
+      margin-bottom: 160px; } }
 
 p {
   color: #4A4A4A; }
@@ -337,8 +372,14 @@ p {
   .project .featured {
     width: 100%;
     margin-bottom: 40px; }
+    @media (min-width: 992px) {
+      .project .featured {
+        margin-bottom: 56px; } }
   .project p {
     margin-bottom: 16px; }
+  .project hr {
+    width: 80%;
+    border-top: thin dotted rgba(0, 0, 0, 0.24); }
   .project .header {
     margin-bottom: 40px; }
   .project .project-data {
@@ -372,10 +413,10 @@ p {
           content: 'Website'; }
         .project .project-data ul li span.year::before {
           content: 'Year'; }
-      @media (min-width: 481px) {
+      @media (min-width: 768px) {
         .project .project-data ul li {
           font-size: 18px; } }
-    @media (min-width: 481px) {
+    @media (min-width: 768px) {
       .project .project-data {
         margin-bottom: 60px; } }
   .project .project-description {
@@ -385,10 +426,10 @@ p {
       font-size: 14px;
       font-weight: 300;
       line-height: 24px; }
-      @media (min-width: 481px) {
+      @media (min-width: 768px) {
         .project .project-description p {
           font-size: 18px; } }
-    @media (min-width: 481px) {
+    @media (min-width: 768px) {
       .project .project-description {
         margin-bottom: 60px; } }
   .project .images {
@@ -397,7 +438,7 @@ p {
       width: 100%; }
     .project .images video {
       width: 100%; }
-    @media (min-width: 481px) {
+    @media (min-width: 768px) {
       .project .images:not(.last) {
         margin-bottom: 24px; } }
   .project .container .row.last {
@@ -418,42 +459,59 @@ p {
   margin-bottom: 24px;
   border: 1px solid rgba(0, 0, 0, 0.24); }
 
-#about .container {
+#about {
   background: rgba(0, 0, 0, 0.04); }
   #about .container .text {
-    padding: 48px 15px 24px;
+    padding-top: 48px;
+    padding-bottom: 24px;
     color: #222; }
     #about .container .text p {
       margin-bottom: 12px; }
-    @media (min-width: 481px) {
+    @media (min-width: 768px) {
       #about .container .text {
-        padding: 120px 80px; } }
-#about h2 {
-  margin-bottom: 12px;
-  font-family: "Arbutus Slab", Georgia, serif;
-  font-size: 28px; }
-#about p {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300; }
-  #about p strong {
-    color: #4A4A4A;
-    font-weight: 700; }
+        padding-top: 128px;
+        padding-bottom: 80px; } }
+    @media (min-width: 992px) {
+      #about .container .text {
+        padding-bottom: 128px; } }
+  #about h2 {
+    margin-bottom: 12px;
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 28px; }
+    @media (min-width: 768px) {
+      #about h2 {
+        margin-bottom: 32px; } }
+  #about p {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300; }
+    #about p strong {
+      color: #4A4A4A;
+      font-weight: 700; }
+    @media (min-width: 768px) {
+      #about p {
+        font-size: 18px; } }
 
 .contact {
   display: inline-block;
   width: 100%;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center; }
   .contact li {
-    margin-left: 8px; }
+    margin-left: 24px; }
     .contact li:first-child {
       margin-left: 0; }
     .contact li a {
       color: #3BAEDA; }
-  @media (min-width: 481px) {
+    @media (min-width: 768px) {
+      .contact li {
+        margin-left: 12px; } }
+  @media (min-width: 768px) {
+    .contact {
+      font-size: 20px; } }
+  @media (min-width: 992px) {
     .contact {
       text-align: right; } }
 
@@ -463,13 +521,28 @@ p {
 #footer {
   margin-top: 40px;
   padding: 40px 0;
-  font-size: 14px; }
+  font-size: 12px; }
   #footer .contact {
-    position: relative;
-    top: -1px;
-    margin-left: 8px;
-    text-align: left; }
+    margin-bottom: 16px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #footer .contact {
+        position: relative;
+        top: -2px;
+        margin-bottom: 0;
+        text-align: left; } }
+    @media (min-width: 992px) {
+      #footer .contact {
+        top: -4px; } }
   #footer .copyright {
-    color: #bbb; }
+    color: #BBB;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #footer .copyright {
+        text-align: right; } }
+  @media (min-width: 768px) {
+    #footer {
+      margin-top: 80px;
+      font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
